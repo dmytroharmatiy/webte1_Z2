@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-v51-latin_latin-ext-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    /* Dark blue accents and a nearly white page */
+    --color-brand-primary: #1e3a5f;
+    --color-brand-secondary: #142b47;
+    --color-header: #1e3a5f;
+    --color-footer: #142b47;
+    --color-surface: #ffffff;
+    --color-button: #edf2f8;
+    --color-button-hover: #dce6f2;
+    --color-button-active: #c6d7eb;
+    --color-soup: #ffdcad;
+    --color-main-dish: #cde3f7;
+
+    /* Bootstrap theme: consistent text color in the main content */
+    --bs-body-font-family: 'Roboto', sans-serif;
+    --bs-body-color: #253247;
+    --bs-body-color-rgb: 37, 50, 71;
+    --bs-body-bg: #fafbfc;
+    --bs-secondary-color: var(--bs-body-color);
+    --bs-secondary-color-rgb: var(--bs-body-color-rgb);
+    --bs-border-color: #dce3ec;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-link-color: var(--bs-body-color);
+    --bs-link-color-rgb: var(--bs-body-color-rgb);
+    --bs-link-hover-color: var(--bs-body-color);
+    --bs-link-hover-color-rgb: var(--bs-body-color-rgb);
+}
+
+.site-header {
+    background-color: var(--color-header);
+    color: #ffffff;
+    --bs-body-color-rgb: 255, 255, 255;
+}
+
+.site-footer {
+    background-color: var(--color-footer);
+    color: #ffffff;
+}
+
+.brand,
+.brand:hover {
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--bs-body-color);
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link:focus-visible {
+    background-color: var(--color-brand-secondary);
+    border-radius: var(--bs-border-radius-pill);
+}
+
+.card {
+    --bs-card-bg: var(--color-surface);
+    --bs-card-border-color: var(--bs-border-color);
+}
+
+.list-group {
+    --bs-list-group-bg: var(--color-surface);
+    --bs-list-group-color: var(--bs-body-color);
+    --bs-list-group-border-color: var(--bs-border-color);
+}
+
+.about-section {
+    scroll-margin-top: 1.5rem;
+}
+
+/* Rounded Bootstrap buttons and all their interactive states */
+.btn {
+    --bs-btn-border-radius: var(--bs-border-radius-pill);
+    --bs-btn-padding-x: 1.1rem;
+}
+
+.btn-primary,
+.btn-outline-primary,
+.btn-outline-secondary {
+    --bs-btn-color: var(--bs-body-color);
+    --bs-btn-border-color: var(--color-brand-primary);
+    --bs-btn-hover-color: var(--bs-body-color);
+    --bs-btn-hover-bg: var(--color-button-hover);
+    --bs-btn-hover-border-color: var(--color-brand-secondary);
+    --bs-btn-active-color: var(--bs-body-color);
+    --bs-btn-active-bg: var(--color-button-active);
+    --bs-btn-active-border-color: var(--color-brand-secondary);
+    --bs-btn-disabled-color: var(--bs-body-color);
+    --bs-btn-disabled-bg: var(--color-button);
+    --bs-btn-disabled-border-color: var(--color-brand-primary);
+    --bs-btn-disabled-opacity: 1;
+    --bs-btn-focus-shadow-rgb: 30, 58, 95;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--color-button);
+}
+
+.form-check-input:checked {
+    background-color: var(--color-brand-primary);
+    border-color: var(--color-brand-primary);
+}
+
+.form-check-input:focus {
+    border-color: var(--color-brand-primary);
+    box-shadow: 0 0 0 0.25rem rgb(30 58 95 / 20%);
+}
+
+.meal-badge {
+    color: var(--bs-body-color);
+}
+
+.soup-badge {
+    background-color: var(--color-soup);
+}
+
+.main-dish-badge {
+    background-color: var(--color-main-dish);
+}
+
+.alert {
+    --bs-alert-color: var(--bs-body-color);
+    --bs-alert-bg: #fff4df;
+    --bs-alert-border-color: #e8d5af;
+}
